@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class ThisDemo {
+class ThisDemo {
     int value;
 
     void setValue(int value) {
@@ -11,14 +11,14 @@ public class ThisDemo {
         System.out.println("Value: " + value);
     }
 }
+
 public class ThisKeywordDemo {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
-        int val = sc.nextInt();
+        int value = sc.nextInt();
 
         ThisDemo obj = new ThisDemo();
-        obj.setValue(val);
+        obj.setValue(value);
         obj.display();
 
         sc.close();
